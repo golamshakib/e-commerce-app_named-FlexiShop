@@ -68,5 +68,5 @@ class YSizes {
   static double loadingIndicatorSize = 36.0;
 
   // -- G R I D   V I E  W   S P A C I N G
-  static double gridView0acing = 16.0;
+  static double gridViewSpacing = 16.0;
 }
