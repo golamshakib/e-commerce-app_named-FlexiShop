@@ -1,4 +1,5 @@
 import 'package:flexishop/features/authentication/providers/providers.onboarding/onboarding_provider.dart';
+import 'package:flexishop/features/authentication/screens.login/login_screen.dart';
 import 'package:flexishop/features/authentication/screens.onboarding/onboarding_screen.dart';
 import 'package:flexishop/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
       initialRoute: OnboardingScreen.routeName,
       routes: {
         OnboardingScreen.routeName: (context) => const OnboardingScreen(),
+        LoginScreen.routeName: (context) => const LoginScreen(),
       },
     );
   }
