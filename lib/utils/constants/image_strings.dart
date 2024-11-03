@@ -2,8 +2,8 @@ class YImages{
   YImages._();
 
   // -- A P P   L O G O S
-  static const String lightAppLogo = "assets/logos/y_store_splash_logo_white.png";
-  static const String darkAppLogo = "assets/logos/y_store_splash_logo_black.png";
+  static const String lightAppLogo = "assets/logos/flexishop_logo.png";
+  static const String darkAppLogo = "assets/logos/flexishop_logo.png";
 
   // -- S O C I A L   L O G O S
   static const String google = "assets/logos/google_icon.png";
