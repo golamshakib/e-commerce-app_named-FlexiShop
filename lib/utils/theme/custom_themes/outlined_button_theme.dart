@@ -1,3 +1,4 @@
+import 'package:flexishop/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class YOutlinedButtonTheme {
@@ -8,11 +9,11 @@ class YOutlinedButtonTheme {
       OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Colors.black,
-      side: const BorderSide(color: Colors.blue),
+      foregroundColor: YColors.black,
+      side: const BorderSide(color: YColors.buttonPrimary),
       padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 20.0),
       textStyle: const TextStyle(
-          fontSize: 16.0, fontWeight: FontWeight.w600, color: Colors.black),
+          fontSize: 16.0, fontWeight: FontWeight.w600, color: YColors.textPrimary),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14.0)),
     ),
   );
@@ -22,11 +23,11 @@ class YOutlinedButtonTheme {
       OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Colors.white,
-      side: const BorderSide(color: Colors.blueAccent),
+      foregroundColor: YColors.white,
+      side: const BorderSide(color: YColors.buttonPrimary),
       padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 20.0),
       textStyle: const TextStyle(
-          fontSize: 16.0, fontWeight: FontWeight.w600, color: Colors.white),
+          fontSize: 16.0, fontWeight: FontWeight.w600, color: YColors.textWhite),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14.0)),
     ),
   );

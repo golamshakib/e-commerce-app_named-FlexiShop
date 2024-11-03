@@ -11,7 +11,7 @@ class YColors {
   // -- T E X T   C O L O R S
   static const Color textPrimary = Color(0xFF333333);
   static const Color textSecondary = Color(0xFF6C757D);
-  static const Color textWhite = Colors.white;
+  static const Color textWhite = Color(0xFFFFFFFF);
 
   // -- B A C K G R O U N D   C O L O R S
   static const Color light = Color(0xFFF6F6f6);
