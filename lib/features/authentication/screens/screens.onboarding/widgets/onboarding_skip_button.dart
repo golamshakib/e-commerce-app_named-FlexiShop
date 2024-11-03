@@ -1,9 +1,9 @@
 import 'package:flexishop/features/authentication/providers/providers.onboarding/onboarding_provider.dart';
-import 'package:flexishop/main.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../../../../utils/constants/sizes.dart';
-import '../../../../utils/device/device_utility.dart';
+import '../../../../../utils/constants/sizes.dart';
+import '../../../../../utils/device/device_utility.dart';
+
 
 class OnboardingSkipButton extends StatelessWidget {
   const OnboardingSkipButton({

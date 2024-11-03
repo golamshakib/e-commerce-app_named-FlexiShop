@@ -1,12 +1,12 @@
-import 'package:flexishop/features/authentication/screens.onboarding/widgets/onboarding_page_view.dart';
-import 'package:flexishop/features/authentication/screens.onboarding/widgets/onboarding_skip_button.dart';
 import 'package:flexishop/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../../../utils/constants/text_strings.dart';
-import '../providers/providers.onboarding/onboarding_provider.dart';
+import '../../../../utils/constants/text_strings.dart';
+import '../../providers/providers.onboarding/onboarding_provider.dart';
 import 'widgets/onboarding_dot_navigation.dart';
 import 'widgets/onboarding_next_button.dart';
+import 'widgets/onboarding_page_view.dart';
+import 'widgets/onboarding_skip_button.dart';
 
 class OnboardingScreen extends StatelessWidget {
   static const String routeName = '/onboarding';

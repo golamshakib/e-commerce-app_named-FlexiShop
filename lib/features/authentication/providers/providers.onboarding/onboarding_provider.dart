@@ -1,4 +1,3 @@
-import 'package:flexishop/features/authentication/screens.login/login_screen.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingProvider with ChangeNotifier{

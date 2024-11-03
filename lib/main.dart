@@ -1,6 +1,6 @@
 import 'package:flexishop/features/authentication/providers/providers.onboarding/onboarding_provider.dart';
-import 'package:flexishop/features/authentication/screens.login/login_screen.dart';
-import 'package:flexishop/features/authentication/screens.onboarding/onboarding_screen.dart';
+import 'features/authentication/screens/screens.login/login_screen.dart';
+import 'features/authentication/screens/screens.onboarding/onboarding_screen.dart';
 import 'package:flexishop/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
