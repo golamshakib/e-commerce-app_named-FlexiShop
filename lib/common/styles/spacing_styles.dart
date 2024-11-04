@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class YSpacingStyle {
 
-  static  EdgeInsetsGeometry spacingWithAppBarHeight = EdgeInsets.only(
+  static EdgeInsetsGeometry paddingWithAppBarHeight = EdgeInsets.only(
     top: YSizes.appBarHeight,
     bottom: YSizes.defaultSpace,
     left: YSizes.defaultSpace,

@@ -24,7 +24,7 @@ class YTextFormFieldTheme {
     ),
     focusedBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14.0),
-      borderSide: const BorderSide(width: 1.0, color: YColors.grey),
+      borderSide: const BorderSide(width: 1.0, color: YColors.borderSecondary),
     ),
     errorBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14.0),

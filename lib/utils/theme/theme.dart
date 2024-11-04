@@ -1,3 +1,4 @@
+import 'package:flexishop/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_themes/appbar_theme.dart';
@@ -19,7 +20,7 @@ class YAppTheme {
     fontFamily: 'Poppins',
     brightness: Brightness.light,
     primaryColor: Colors.blue,
-    scaffoldBackgroundColor: Colors.white,
+    scaffoldBackgroundColor: YColors.light,
     textTheme: YTextTheme.lightTextTheme,
     chipTheme: YChipTheme.lightChipTheme,
     appBarTheme: YAppBarTheme.lightAppBarTheme,
@@ -36,7 +37,7 @@ class YAppTheme {
     fontFamily: 'Poppins',
     brightness: Brightness.dark,
     primaryColor: Colors.blue,
-    scaffoldBackgroundColor: Colors.black,
+    scaffoldBackgroundColor: YColors.dark,
     textTheme: YTextTheme.darkTextTheme,
     chipTheme: YChipTheme.darkChipTheme,
     appBarTheme: YAppBarTheme.darkAppBarTheme,
