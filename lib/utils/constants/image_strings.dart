@@ -13,4 +13,8 @@ class YImages{
   static const String onboardingImage1 = "assets/images/onboarding_images/onboarding1.gif";
   static const String onboardingImage2 = "assets/images/onboarding_images/onboarding2.gif";
   static const String onboardingImage3 = "assets/images/onboarding_images/onboarding3.gif";
+
+  // -- A N I M A T I O N   I M A G E S
+  static const String verifyEmailIllustration = "assets/images/animations/email_verify1.png";
+  static const String successfulIllustration = "assets/images/animations/successfull.gif";
 }

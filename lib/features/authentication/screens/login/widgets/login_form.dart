@@ -1,7 +1,9 @@
-import 'package:flexishop/utils/constants/sizes.dart';
-import 'package:flexishop/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+
+import '../../../../../utils/constants/sizes.dart';
+import '../../../../../utils/constants/text_strings.dart';
+import '../../signup/signup_screen.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({
@@ -49,6 +51,7 @@ class LoginForm extends StatelessWidget {
                     const Text(YTexts.rememberMe),
                   ],
                 ),
+
                 /// Forget Password
                 TextButton(
                   onPressed: () {},
@@ -72,7 +75,9 @@ class LoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, SignupScreen.routeName);
+                },
                 child: const Text(YTexts.createAccount),
               ),
             ),

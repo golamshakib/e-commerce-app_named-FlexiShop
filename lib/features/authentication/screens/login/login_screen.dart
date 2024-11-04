@@ -1,12 +1,12 @@
-import 'package:flexishop/common/styles/spacing_styles.dart';
-import 'package:flexishop/common/widgets/form_divider.dart';
-import 'package:flexishop/common/widgets/social_buttons.dart';
-import 'package:flexishop/features/authentication/screens/screens.login/widgets/login_form.dart';
-import 'package:flexishop/features/authentication/screens/screens.login/widgets/login_header.dart';
-import 'package:flexishop/utils/constants/sizes.dart';
-import 'package:flexishop/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../common/styles/spacing_styles.dart';
+import '../../../../common/widgets/login_signup/form_divider.dart';
+import '../../../../common/widgets/login_signup/social_buttons.dart';
+import '../../../../utils/constants/sizes.dart';
+import '../../../../utils/constants/text_strings.dart';
+import 'widgets/login_form.dart';
+import 'widgets/login_header.dart';
 
 class LoginScreen extends StatelessWidget {
   static const String routeName = '/login';
@@ -22,12 +22,13 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             children: [
               /// Logo, title & subTitle
-              const LoginHeader(),
-              SizedBox(height: YSizes.spaceBtwSections),
+              Padding(
+                padding: EdgeInsets.only(top: YSizes.spaceBtwSections * 2),
+                child: const LoginHeader(),
+              ),
 
               /// Form
               const LoginForm(),
-              SizedBox(height: YSizes.spaceBtwSections),
 
               /// Divider
               const FormDivider(dividerText: YTexts.orSignInWith),
