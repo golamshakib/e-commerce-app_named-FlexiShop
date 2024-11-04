@@ -1,11 +1,12 @@
-import 'package:flexishop/features/authentication/providers/providers.onboarding/onboarding_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:provider/provider.dart';
+
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/device/device_utility.dart';
-import '../../screens.login/login_screen.dart';
+import '../../../providers/providers.onboarding/onboarding_provider.dart';
+import '../../login/login_screen.dart';
 
 class OnboardingNextButton extends StatelessWidget {
   const OnboardingNextButton({
@@ -29,7 +30,9 @@ class OnboardingNextButton extends StatelessWidget {
         },
         style: ElevatedButton.styleFrom(
           shape: const CircleBorder(),
+          side: BorderSide(color: dark ? YColors.primary : YColors.black),
           backgroundColor: dark ? YColors.primary : YColors.black,
+
         ),
         child: const Icon(Iconsax.arrow_right_3),
       ),
