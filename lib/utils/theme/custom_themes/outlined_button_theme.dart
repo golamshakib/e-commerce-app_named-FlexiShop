@@ -10,7 +10,7 @@ class YOutlinedButtonTheme {
     style: OutlinedButton.styleFrom(
       elevation: 0,
       foregroundColor: YColors.black,
-      side: const BorderSide(color: YColors.buttonPrimary),
+      side: BorderSide(color: YColors.borderPrimary.withOpacity(0.5)),
       padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 20.0),
       textStyle: const TextStyle(
           fontSize: 16.0, fontWeight: FontWeight.w600, color: YColors.textPrimary),
@@ -24,7 +24,7 @@ class YOutlinedButtonTheme {
     style: OutlinedButton.styleFrom(
       elevation: 0,
       foregroundColor: YColors.white,
-      side: const BorderSide(color: YColors.buttonPrimary),
+      side: const BorderSide(color: YColors.borderPrimary),
       padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 20.0),
       textStyle: const TextStyle(
           fontSize: 16.0, fontWeight: FontWeight.w600, color: YColors.textWhite),

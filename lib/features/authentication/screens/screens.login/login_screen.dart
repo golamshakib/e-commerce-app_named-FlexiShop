@@ -1,8 +1,12 @@
 import 'package:flexishop/common/styles/spacing_styles.dart';
-import 'package:flexishop/utils/constants/image_strings.dart';
+import 'package:flexishop/common/widgets/form_divider.dart';
+import 'package:flexishop/common/widgets/social_buttons.dart';
+import 'package:flexishop/features/authentication/screens/screens.login/widgets/login_form.dart';
+import 'package:flexishop/features/authentication/screens/screens.login/widgets/login_header.dart';
 import 'package:flexishop/utils/constants/sizes.dart';
 import 'package:flexishop/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
+
 
 class LoginScreen extends StatelessWidget {
   static const String routeName = '/login';
@@ -14,31 +18,23 @@ class LoginScreen extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
-          padding: YSpacingStyle.spacingWithAppBarHeight,
+          padding: YSpacingStyle.paddingWithAppBarHeight,
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              /// Logo, title, subTitle
-              Image.asset(
-                width: 150,
-                YImages.lightAppLogo,
-              ),
-              SizedBox(height: YSizes.md),
-              Text(
-                YTexts.loginTitle,
-                style: Theme.of(context).textTheme.headlineMedium,
-              ),
-              SizedBox(height: YSizes.xs),
-              Text(
-                YTexts.loginSubTitle,
-                style: Theme.of(context).textTheme.bodyMedium,
-              ),
+              /// Logo, title & subTitle
+              const LoginHeader(),
+              SizedBox(height: YSizes.spaceBtwSections),
 
               /// Form
+              const LoginForm(),
+              SizedBox(height: YSizes.spaceBtwSections),
 
               /// Divider
+              const FormDivider(dividerText: YTexts.orSignInWith),
+              SizedBox(height: YSizes.spaceBtwSections),
 
               /// Footer
+              const SocialButtons()
             ],
           ),
         ),

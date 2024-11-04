@@ -43,7 +43,7 @@ class YSizes {
   static double borderRadiusLg = 12.0;
 
   // -- D I V I D E R   H E I G H T
-  static double dividerHeight = 1.0;
+  static double dividerHeight = 0.5;
 
   // -- P R O D U C T   I T E M   D I M E N S I O N S
   static double productItemSize = 120.0;

@@ -18,7 +18,7 @@ class YTexts{
   static const String email = "E-mail";
   static const String password = "Password";
   static const String newPassword = "New Password";
-  static const String forgetPassword = "Forget Password";
+  static const String forgetPassword = "Forget Password?";
   static const String username = "Username";
   static const String phoneNo = "Phone Number";
   static const String rememberMe = "Remember Me";
