@@ -13,7 +13,7 @@ class YAppBarTheme {
     surfaceTintColor: Colors.transparent,
     iconTheme: IconThemeData(color: YColors.black, size: 24.0),
     actionsIconTheme: IconThemeData(color: YColors.black, size: 24.0),
-    titleTextStyle: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600, color: YColors.textPrimary),
+    titleTextStyle: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600, color: YColors.dark),
   );
 
   // D A R K   A P P   B A R   T H E M E
@@ -25,6 +25,6 @@ class YAppBarTheme {
     surfaceTintColor: Colors.transparent,
     iconTheme: IconThemeData(color: YColors.white, size: 24.0),
     actionsIconTheme: IconThemeData(color: YColors.white, size: 24.0),
-    titleTextStyle: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600, color: YColors.textWhite),
+    titleTextStyle: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600, color: YColors.white),
   );
 }
