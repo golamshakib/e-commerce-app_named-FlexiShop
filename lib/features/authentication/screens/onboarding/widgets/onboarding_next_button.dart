@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/device/device_utility.dart';
-import '../../../providers/providers.onboarding/onboarding_provider.dart';
+import '../../../providers/onboarding/onboarding_provider.dart';
 import '../../login/login_screen.dart';
 
 class OnboardingNextButton extends StatelessWidget {

@@ -51,4 +51,10 @@ class YTexts{
   static const String yourAccountCreatedTitle = "Your account successfully created!";
   static const String yourAccountCreatedSubTitle = "Welcome to Your Ultimate Shopping Destination: Your Account is Created Unleash the Joy of Seamless online Shopping!";
 
+  // -- N A V I G A T I O N   M E N U   T E X T
+  static const String home = "Home";
+  static const String store = "Store";
+  static const String wishlist = "Wishlist";
+  static const String profile = "Profile";
+
 }

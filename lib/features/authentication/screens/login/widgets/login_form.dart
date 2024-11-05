@@ -1,3 +1,4 @@
+import 'package:flexishop/navigation_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -67,7 +68,7 @@ class LoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => Navigator.pushReplacementNamed(context, NavigationMenu.routeName),
                 child: const Text(YTexts.signIn),
               ),
             ),

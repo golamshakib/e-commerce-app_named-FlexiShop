@@ -7,7 +7,7 @@ class YChipTheme {
   // L I G H T   C H I P   T H E M E
   static ChipThemeData lightChipTheme = ChipThemeData(
     disabledColor: YColors.grey.withOpacity(0.4),
-    labelStyle: const TextStyle(color: YColors.textPrimary),
+    labelStyle: const TextStyle(color: YColors.dark),
     selectedColor: YColors.primary,
     padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 12.0),
     checkmarkColor: YColors.white,
