@@ -36,7 +36,7 @@ class SignupScreen extends StatelessWidget {
               const FormDivider(dividerText: YTexts.orSignUpWith),
               SizedBox(height: YSizes.spaceBtwSections),
 
-              /// Footer
+              /// Social Button
               const SocialButtons(),
             ],
           ),

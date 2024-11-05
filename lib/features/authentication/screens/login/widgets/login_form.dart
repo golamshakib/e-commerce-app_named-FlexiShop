@@ -3,6 +3,7 @@ import 'package:iconsax/iconsax.dart';
 
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
+import '../../password_configuration/forget_password_screen.dart';
 import '../../signup/signup_screen.dart';
 
 class LoginForm extends StatelessWidget {
@@ -28,6 +29,7 @@ class LoginForm extends StatelessWidget {
 
             /// Password
             TextFormField(
+              obscureText: true,
               decoration: const InputDecoration(
                 prefixIcon: Icon(Iconsax.password_check),
                 suffixIcon: Icon(Iconsax.eye_slash),
@@ -54,7 +56,7 @@ class LoginForm extends StatelessWidget {
 
                 /// Forget Password
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () => Navigator.pushNamed(context, ForgetPasswordScreen.routeName),
                   child: const Text(YTexts.forgetPassword),
                 ),
               ],
