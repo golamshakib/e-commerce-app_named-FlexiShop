@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import 'features/authentication/screens/password_configuration/forget_password_screen.dart';
+import 'features/authentication/screens/password_configuration/reset_password_screen.dart';
+import 'features/authentication/screens/signup/success_email_screen.dart';
 import 'features/authentication/providers/providers.onboarding/onboarding_provider.dart';
 import 'features/authentication/screens/login/login_screen.dart';
 import 'features/authentication/screens/onboarding/onboarding_screen.dart';
 import 'features/authentication/screens/signup/signup_screen.dart';
-import 'features/authentication/screens/signup/verify_email.dart';
+import 'features/authentication/screens/signup/verify_email_screen.dart';
 import 'utils/theme/theme.dart';
 
 void main() {
@@ -31,7 +34,10 @@ class MyApp extends StatelessWidget {
         OnboardingScreen.routeName: (context) => const OnboardingScreen(),
         LoginScreen.routeName: (context) => const LoginScreen(),
         SignupScreen.routeName: (context) => const SignupScreen(),
-        VerifyEmail.routeName: (context) => const VerifyEmail(),
+        VerifyEmailScreen.routeName: (context) => const VerifyEmailScreen(),
+        SuccessEmailScreen.routeName: (context) => const SuccessEmailScreen(),
+        ForgetPasswordScreen.routeName: (context) => const ForgetPasswordScreen(),
+        PasswordResetScreen.routeName: (context) => const PasswordResetScreen(),
       },
     );
   }
