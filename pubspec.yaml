@@ -54,6 +54,7 @@ dependencies:
 
   # PRODUCT SPECIFIC
   smooth_page_indicator: ^1.2.0+3
+  carousel_slider: ^5.0.0
 
 
 
@@ -86,8 +87,10 @@ flutter:
   # LOCAL ASSETS
   assets:
     - assets/logos/
+    - assets/icons/
     - assets/images/onboarding_images/
     - assets/images/animations/
+    - assets/images/banners/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

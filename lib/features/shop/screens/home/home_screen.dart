@@ -1,4 +1,6 @@
 import 'package:flexishop/features/shop/screens/home/widgets/home_appbar.dart';
+import 'package:flexishop/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:flexishop/features/shop/screens/home/widgets/home_promo_slider.dart';
 import 'package:flexishop/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
@@ -6,6 +8,7 @@ import '../../../../common/widgets/custom_shape/container/primary_header_contain
 import '../../../../common/widgets/custom_shape/container/search_container.dart';
 import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../utils/constants/colors.dart';
+import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/constants/text_strings.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -15,7 +18,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -24,11 +27,11 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 children: [
                   /// -- Appbar
-                  const YHomeAppBar(),
+                  YHomeAppBar(),
                   SizedBox(height: YSizes.spaceBtwSections),
 
                   /// -- Searchbar
-                  const YCustomSearchBar(text: YTexts.searchInStore),
+                  YCustomSearchBar(text: YTexts.searchInStore),
                   SizedBox(height: YSizes.spaceBtwSections),
 
                   /// -- Categories
@@ -36,17 +39,27 @@ class HomeScreen extends StatelessWidget {
                     padding: EdgeInsets.only(left: YSizes.defaultSpace),
                     child: Column(
                       children: [
-                        const YSectionHeading(title: YTexts.popularCat, textColor: YColors.white ,showActionButton: false),
+                        /// Heading Text
+                        YSectionHeading(
+                          title: YTexts.popularCat,
+                          textColor: YColors.white,
+                          showActionButton: false,
+                        ),
                         SizedBox(height: YSizes.spaceBtwItems),
+
+                        /// Heading Categories
+                        YHomeCategories(),
                       ],
                     ),
                   ),
-
-                  Container(
-                    height: 200.0,
-                  ),
                 ],
               ),
+            ),
+
+            /// -- Promo Banner
+            Padding(
+              padding: EdgeInsets.all(YSizes.defaultSpace),
+              child: YPromoSlider(banners: [YImages.banner1, YImages.banner2, YImages.banner3]),
             ),
           ],
         ),

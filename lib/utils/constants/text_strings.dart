@@ -67,4 +67,7 @@ class YTexts{
 
   // -- S E C T I O N   H E A D I N G   T E X T
   static const String popularCat = "Popular Categories";
+
+  // -- C A T E G O R Y   I M A G E   T E X T
+  static const String categoryText = "Shoe Category";
 }

@@ -8,6 +8,7 @@ class YCircularContainer extends StatelessWidget {
     this.child,
     this.width = 400.0,
     this.height = 400.0,
+    this.margin,
     this.padding = 0.0,
     this.radius = 400.0,
     this.backgroundColor = YColors.white,
@@ -16,6 +17,7 @@ class YCircularContainer extends StatelessWidget {
   final double? width;
   final double? height;
   final double padding;
+  final EdgeInsets? margin;
   final double radius;
   final Color backgroundColor;
   final Widget? child;
@@ -25,6 +27,7 @@ class YCircularContainer extends StatelessWidget {
     return Container(
       width: width,
       height: height,
+      margin: margin,
       padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),
