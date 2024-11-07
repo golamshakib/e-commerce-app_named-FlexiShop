@@ -2,6 +2,11 @@ class YTexts{
   YTexts._();
 
   // -- G L O B A L   T E X T
+  static const String and = "and";
+  static const String tContinue = "Continue";
+  static const String submit = "Submit";
+  static const String done = "Done";
+  static const String viewAll = "View All";
 
   // -- O N B O A R D I N G   T E X T S
   static const String onBoardingTitle1 = "Unleash Your Potential";
@@ -28,12 +33,8 @@ class YTexts{
   static const String createAccount = "Create Account";
   static const String isAgreeTo = "I agree to";
   static const String privacyPolicy = "Privacy Policy";
-  static const String and = "and";
   static const String termsOfUse = "Terms of use";
   static const String verificationCode = "verification code";
-  static const String tContinue = "Continue";
-  static const String submit = "Submit";
-  static const String done = "Done";
   static const String resendEmail = "Resend Email";
   static const String resendEmailIn = "Resend email in";
 
@@ -57,4 +58,13 @@ class YTexts{
   static const String wishlist = "Wishlist";
   static const String profile = "Profile";
 
+  // -- H O M E   T E X T
+  static const String appBarTile = "Good day for shopping";
+  static const String appbarSubTitle = "Taimoor Sikandar";
+
+  // -- S E A R C H   T E X T
+  static const String searchInStore = "Search in Store";
+
+  // -- S E C T I O N   H E A D I N G   T E X T
+  static const String popularCat = "Popular Categories";
 }
