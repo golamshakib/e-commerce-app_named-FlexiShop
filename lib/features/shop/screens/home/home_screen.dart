@@ -1,4 +1,5 @@
 import 'package:flexishop/features/shop/screens/home/widgets/home_appbar.dart';
+import 'package:flexishop/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:flexishop/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
@@ -36,14 +37,17 @@ class HomeScreen extends StatelessWidget {
                     padding: EdgeInsets.only(left: YSizes.defaultSpace),
                     child: Column(
                       children: [
-                        const YSectionHeading(title: YTexts.popularCat, textColor: YColors.white ,showActionButton: false),
+                        /// Heading Text
+                        const YSectionHeading(
+                            title: YTexts.popularCat,
+                            textColor: YColors.white,
+                            showActionButton: false),
                         SizedBox(height: YSizes.spaceBtwItems),
+
+                        /// Heading Categories
+                        const YHomeCategories(),
                       ],
                     ),
-                  ),
-
-                  Container(
-                    height: 200.0,
                   ),
                 ],
               ),

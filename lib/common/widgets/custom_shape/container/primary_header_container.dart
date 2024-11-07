@@ -16,6 +16,7 @@ class YPrimaryHeaderContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return YCurvedEdgesWidget(
       child: Container(
+        height: 400.0,
         color: YColors.primary,
         padding: const EdgeInsets.all(0.0),
         child: Stack(
