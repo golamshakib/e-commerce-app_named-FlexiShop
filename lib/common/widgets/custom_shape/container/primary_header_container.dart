@@ -34,6 +34,7 @@ class YPrimaryHeaderContainer extends StatelessWidget {
                 backgroundColor: YColors.white.withOpacity(0.1),
               ),
             ),
+           child,
           ],
         ),
       ),
