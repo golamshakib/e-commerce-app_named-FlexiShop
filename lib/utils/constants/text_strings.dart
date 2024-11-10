@@ -70,4 +70,8 @@ class YTexts{
 
   // -- C A T E G O R Y   I M A G E   T E X T
   static const String categoryText = "Shoe Category";
+
+  // -- P R O D U C T   T E X T
+
+
 }

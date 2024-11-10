@@ -4,7 +4,7 @@ import 'package:flexishop/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../../common/widgets/custom_shape/container/circular_container.dart';
+import '../../../../../common/widgets/custom_shape/container/rounded_container.dart';
 import '../../../../../common/widgets/images/rounded_image.dart';
 import '../../../../../utils/constants/sizes.dart';
 
@@ -36,7 +36,7 @@ class YPromoSlider extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               for (int i = 0; i < banners.length; i++)
-                YCircularContainer(
+                YRoundedContainer(
                   height: 4.0,
                   width: 20.0,
                   margin: const EdgeInsets.only(right: YSizes.sm),

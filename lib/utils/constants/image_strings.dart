@@ -30,4 +30,7 @@ class YImages{
   static const String shoeIcon1 = "assets/icons/shoe.png";
   static const String shoeIcon2 = "assets/icons/shoe1.png";
 
+  // -- P R O D U C T S   I M A G E S
+  static const String productImage1 = "assets/logos/flexishop_logo.png";
+
 }
