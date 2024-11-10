@@ -1,3 +1,4 @@
+import 'package:flexishop/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -6,7 +7,7 @@ import '../../../../utils/constants/colors.dart';
 class YCartCounterIcon extends StatelessWidget {
   const YCartCounterIcon({
     super.key,
-    required this.iconColor,
+    this.iconColor,
     required this.onPressed,
   });
 
@@ -15,6 +16,7 @@ class YCartCounterIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark = YDeviceUtils.isDarkMode(context);
     return Stack(
       children: [
         IconButton(
@@ -27,14 +29,14 @@ class YCartCounterIcon extends StatelessWidget {
             height: 18.0,
             width: 18.0,
             decoration: BoxDecoration(
-                color: YColors.black,
+                color: dark ? YColors.white : YColors.black,
                 borderRadius: BorderRadius.circular(100.0)),
             child: Center(
                 child: Text('2',
                     style: Theme.of(context)
                         .textTheme
                         .labelLarge!
-                        .apply(color: YColors.white, fontSizeFactor: 0.8))),
+                        .apply(color: dark ? YColors.black : YColors.white, fontSizeFactor: 0.8))),
           ),
         ),
       ],

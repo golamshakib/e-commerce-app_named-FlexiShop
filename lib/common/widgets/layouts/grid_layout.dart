@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../utils/constants/sizes.dart';
-import '../products/product_carts/product_cart_vertical.dart';
 
 class YGridLayout extends StatelessWidget {
   const YGridLayout({

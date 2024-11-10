@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/sizes.dart';
 
 class YRoundedImage extends StatelessWidget {
@@ -9,23 +8,26 @@ class YRoundedImage extends StatelessWidget {
     this.border,
     this.padding,
     this.onTap,
-    this.height,
-    this.width,
+    this.containerHeight,
+    this.containerWidth,
+    this.imageHeight = double.infinity,
+    this.imageWidth = double.infinity,
     this.borderRadius = YSizes.md,
     required this.imageUrl,
     this.fit = BoxFit.contain,
     this.applyImageRadius = true,
-    this.backgroundColor = YColors.light,
+    this.backgroundColor,
     this.isNetworkImage = false,
 
   });
 
-  final double? height, width;
+  final double? containerHeight, containerWidth;
+  final double? imageHeight, imageWidth;
   final double borderRadius;
   final String imageUrl;
   final bool applyImageRadius;
   final BoxBorder? border;
-  final Color backgroundColor;
+  final Color? backgroundColor;
   final BoxFit? fit;
   final EdgeInsetsGeometry? padding;
   final bool isNetworkImage;
@@ -36,8 +38,8 @@ class YRoundedImage extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: height,
-        width: width,
+        height: containerHeight,
+        width: containerWidth,
         padding: padding,
         decoration: BoxDecoration(
           border: border,
@@ -50,6 +52,8 @@ class YRoundedImage extends StatelessWidget {
               : BorderRadius.zero,
           child: Image(
             fit: fit,
+            width: imageHeight,
+            height: imageWidth,
             image:
             isNetworkImage ? NetworkImage(imageUrl) : AssetImage(imageUrl),
           ),

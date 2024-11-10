@@ -1,3 +1,4 @@
+import 'package:flexishop/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 import '../../../utils/constants/text_strings.dart';
@@ -15,19 +16,29 @@ class YSectionHeading extends StatelessWidget {
   final Color? textColor;
   final bool showActionButton;
   final String title, buttonTitle;
-  final void Function()? onPressed;
+  final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {
     return Row(
-      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(title,
-            style:
-            Theme.of(context).textTheme.headlineMedium!.apply(color: textColor),
+            style: Theme.of(context)
+                .textTheme
+                .headlineSmall!
+                .apply(color: textColor),
             maxLines: 1,
             overflow: TextOverflow.ellipsis),
-        if (showActionButton) TextButton(onPressed: onPressed, child: Text(buttonTitle)),
+        if (showActionButton)
+          TextButton(
+            onPressed: onPressed,
+            child: Text(buttonTitle,
+                style: Theme.of(context)
+                    .textTheme
+                    .labelLarge!
+                    .apply(color: YColors.primary)),
+          ),
       ],
     );
   }

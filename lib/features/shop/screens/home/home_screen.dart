@@ -1,5 +1,3 @@
-import 'package:flexishop/common/widgets/custom_shape/container/rounded_container.dart';
-import 'package:flexishop/common/widgets/products/product_carts/product_cart_vertical.dart';
 import 'package:flexishop/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:flexishop/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:flexishop/features/shop/screens/home/widgets/home_promo_slider.dart';
@@ -9,6 +7,7 @@ import 'package:flutter/material.dart';
 import '../../../../common/widgets/custom_shape/container/primary_header_container.dart';
 import '../../../../common/widgets/custom_shape/container/search_container.dart';
 import '../../../../common/widgets/layouts/grid_layout.dart';
+import '../../../../common/widgets/products/product_cards/product_card_vertical.dart';
 import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/image_strings.dart';
@@ -59,11 +58,12 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
 
-            /// -- P R O M O   B A N N E R
+            /// Body
             Padding(
               padding: const EdgeInsets.all(YSizes.defaultSpace),
               child: Column(
                 children: [
+                  /// -- Promo slider banner
                   const YPromoSlider(banners: [
                     YImages.banner1,
                     YImages.banner2,
@@ -71,8 +71,12 @@ class HomeScreen extends StatelessWidget {
                   ]),
                   const SizedBox(height: YSizes.spaceBtwItems),
 
-                  /// -- P O P U L A R   P R O D U C T S
-                  YGridLayout(itemCount: 4, itemBuilder: (_ , index ) => const YProductCartVertical()),
+                  /// Heading
+                  YSectionHeading(title: 'Popular Products', onPressed: () {}),
+                  const SizedBox(height: YSizes.spaceBtwItems),
+
+                  /// -- Popular Products
+                  YGridLayout(itemCount: 4, itemBuilder: (_ , index ) => const YProductCardVertical()),
                 ],
               ),
             ),
