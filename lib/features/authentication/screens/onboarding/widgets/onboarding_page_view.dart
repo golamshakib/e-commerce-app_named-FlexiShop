@@ -16,7 +16,7 @@ class OnboardingPageView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(YSizes.defaultSpace),
+      padding: const EdgeInsets.all(YSizes.defaultSpace),
       child: Column(
         children: [
           Image.asset(
@@ -29,7 +29,7 @@ class OnboardingPageView extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineMedium,
             textAlign: TextAlign.center,
           ),
-          SizedBox(height: YSizes.spaceBtwItems),
+          const SizedBox(height: YSizes.spaceBtwItems),
           Text(
             subTitle,
             style: Theme.of(context).textTheme.bodyMedium,

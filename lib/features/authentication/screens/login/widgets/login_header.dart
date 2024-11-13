@@ -19,12 +19,12 @@ class LoginHeader extends StatelessWidget {
           height: 100,
           image: AssetImage(dark ? YImages.lightAppLogo : YImages.darkAppLogo),
         ),
-        SizedBox(height: YSizes.md),
+        const SizedBox(height: YSizes.md),
         Text(
           YTexts.loginTitle,
           style: Theme.of(context).textTheme.headlineMedium,
         ),
-        SizedBox(height: YSizes.sm),
+        const SizedBox(height: YSizes.sm),
         Text(
           YTexts.loginSubTitle,
           style: Theme.of(context).textTheme.bodyMedium,

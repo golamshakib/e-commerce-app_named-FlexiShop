@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/sizes.dart';
-import '../../../utils/device/device_utility.dart';
 
 class YVerticalImageText extends StatelessWidget {
   const YVerticalImageText({
@@ -21,11 +20,10 @@ class YVerticalImageText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = YDeviceUtils.isDarkMode(context);
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: EdgeInsets.only(right: YSizes.spaceBtwItems),
+        padding: const EdgeInsets.only(right: YSizes.spaceBtwItems),
         child: Column(
           children: [
 
@@ -33,9 +31,9 @@ class YVerticalImageText extends StatelessWidget {
             Container(
               height: 56,
               width: 56,
-              padding: EdgeInsets.all(YSizes.sm),
+              padding: const EdgeInsets.all(YSizes.sm),
               decoration: BoxDecoration(
-                color: backgroundColor ?? (dark ? YColors.black : YColors.white),
+                color: backgroundColor,
                 borderRadius: BorderRadius.circular(100.0),
               ),
               child: Center(
@@ -45,7 +43,7 @@ class YVerticalImageText extends StatelessWidget {
                     color: YColors.dark,
                   )),
             ),
-            SizedBox(height: YSizes.spaceBtwItems / 2),
+            const SizedBox(height: YSizes.spaceBtwItems / 2),
 
             /// Text
             SizedBox(

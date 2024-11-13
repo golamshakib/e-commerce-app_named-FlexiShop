@@ -16,13 +16,13 @@ class SignupScreen extends StatelessWidget {
       appBar: AppBar(),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(YSizes.defaultSpace),
+          padding: const EdgeInsets.all(YSizes.defaultSpace),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               /// Header
               Padding(
-                padding: EdgeInsets.only(top: YSizes.spaceBtwSections / 2),
+                padding: const EdgeInsets.only(top: YSizes.spaceBtwSections / 2),
                 child: Text(
                   YTexts.signupTitle,
                   style: Theme.of(context).textTheme.headlineMedium,
@@ -34,7 +34,7 @@ class SignupScreen extends StatelessWidget {
 
               /// Divider
               const FormDivider(dividerText: YTexts.orSignUpWith),
-              SizedBox(height: YSizes.spaceBtwSections),
+              const SizedBox(height: YSizes.spaceBtwSections),
 
               /// Social Button
               const SocialButtons(),

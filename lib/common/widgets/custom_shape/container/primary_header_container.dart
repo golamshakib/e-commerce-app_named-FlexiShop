@@ -8,15 +8,16 @@ class YPrimaryHeaderContainer extends StatelessWidget {
   const YPrimaryHeaderContainer({
     super.key,
     required this.child,
+
   });
 
   final Widget child;
+
 
   @override
   Widget build(BuildContext context) {
     return YCurvedEdgesWidget(
       child: Container(
-        height: 400.0,
         color: YColors.primary,
         padding: const EdgeInsets.all(0.0),
         child: Stack(
@@ -39,7 +40,7 @@ class YPrimaryHeaderContainer extends StatelessWidget {
                 backgroundColor: YColors.white.withOpacity(0.1),
               ),
             ),
-           child,
+            child,
           ],
         ),
       ),
