@@ -11,17 +11,14 @@ class YCircularImage extends StatelessWidget {
     this.containerHeight = 56.0,
     this.containerWidth = 56.0,
     this.borderRadius = 100.0,
-    this.imageHeight = double.infinity,
-    this.imageWidth = double.infinity,
     required this.imageUrl,
-    this.fit = BoxFit.contain,
+    this.fit = BoxFit.cover,
     this.backgroundColor,
     this.overlayColor,
     this.isNetworkImage = false,
   });
 
   final double containerHeight, containerWidth;
-  final double? imageHeight, imageWidth;
   final double borderRadius;
   final String imageUrl;
   final Color? backgroundColor;
@@ -41,12 +38,12 @@ class YCircularImage extends StatelessWidget {
         color: backgroundColor ?? (dark ? YColors.black : YColors.white),
         borderRadius: BorderRadius.circular(borderRadius),
       ),
-      child: Image(
-        width: imageHeight,
-        height: imageWidth,
-        fit: fit,
-        image: isNetworkImage ? NetworkImage(imageUrl) : AssetImage(imageUrl),
-        color: overlayColor ?? (dark ? YColors.white : YColors.black),
+      child: Center(
+        child: Image(
+          fit: fit,
+          image: isNetworkImage ? NetworkImage(imageUrl) : AssetImage(imageUrl),
+          color: overlayColor,
+        ),
       ),
     );
   }

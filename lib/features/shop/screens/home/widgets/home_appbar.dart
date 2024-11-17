@@ -22,6 +22,8 @@ class YHomeAppBar extends StatelessWidget {
                   .labelLarge!
                   .apply(color: YColors.grey)),
           Text(YTexts.appbarSubTitle,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
               style: Theme.of(context)
                   .textTheme
                   .headlineMedium!

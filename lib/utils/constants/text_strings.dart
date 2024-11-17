@@ -60,7 +60,7 @@ class YTexts{
 
   // -- H O M E   T E X T
   static const String appBarTile = "Good day for shopping";
-  static const String appbarSubTitle = "Taimoor Sikandar";
+  static const String appbarSubTitle = "Golam Shakib Hosen";
 
   // -- S E A R C H   T E X T
   static const String searchInStore = "Search in Store";

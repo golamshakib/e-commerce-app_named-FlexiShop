@@ -16,7 +16,7 @@ class YHomeCategories extends StatelessWidget {
       child: ListView.builder(
         shrinkWrap: true,
         scrollDirection: Axis.horizontal,
-        itemCount: 6,
+        itemCount: 7,
         itemBuilder: (_, index) => YVerticalImageText(
           image: YImages.shoeIcon1,
           title: YTexts.categoryText,

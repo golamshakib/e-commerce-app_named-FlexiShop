@@ -8,6 +8,7 @@ import 'package:iconsax/iconsax.dart';
 import '../../../../common/widgets/appbar/custom_appbar.dart';
 import '../../../../common/widgets/list_tile/settings_menu_tile.dart';
 import '../../../../common/widgets/list_tile/user_profile_tile.dart';
+import '../profile/profile_screen.dart';
 
 class SettingsScreen extends StatelessWidget {
   static const String routeName = '/setting';
@@ -35,7 +36,7 @@ class SettingsScreen extends StatelessWidget {
                   const SizedBox(height: YSizes.spaceBtwSections),
 
                   /// -- User Profile Tile
-                  const YUserProfileTile(),
+                  YUserProfileTile(onPressed: () => Navigator.pushNamed(context, ProfileScreen.routeName)),
                   const SizedBox(height: YSizes.spaceBtwSections),
                 ],
               ),

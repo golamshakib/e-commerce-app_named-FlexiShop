@@ -10,7 +10,8 @@ import 'features/authentication/screens/login/login_screen.dart';
 import 'features/authentication/screens/onboarding/onboarding_screen.dart';
 import 'features/authentication/screens/signup/signup_screen.dart';
 import 'features/authentication/screens/signup/verify_email_screen.dart';
-import 'features/personalization/screens/settings/settings.dart';
+import 'features/personalization/screens/profile/profile_screen.dart';
+import 'features/personalization/screens/settings/settings_screen.dart';
 import 'features/shop/screens/home/home_screen.dart';
 import 'features/shop/screens/store/store_screen.dart';
 import 'features/shop/screens/wishlist/wishlist_screen.dart';
@@ -51,6 +52,7 @@ class MyApp extends StatelessWidget {
         StoreScreen.routeName: (context) => const StoreScreen(),
         WishlistScreen.routeName: (context) => const WishlistScreen(),
         SettingsScreen.routeName: (context) => const SettingsScreen(),
+        ProfileScreen.routeName: (context) => const ProfileScreen(),
       },
     );
   }

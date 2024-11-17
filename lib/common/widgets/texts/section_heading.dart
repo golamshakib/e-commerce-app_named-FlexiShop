@@ -36,8 +36,7 @@ class YSectionHeading extends StatelessWidget {
             child: Text(buttonTitle,
                 style: Theme.of(context)
                     .textTheme
-                    .labelLarge!
-                    .apply(color: YColors.primary)),
+                    .labelLarge),
           ),
       ],
     );
