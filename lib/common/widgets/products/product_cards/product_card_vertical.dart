@@ -1,6 +1,7 @@
 import 'package:flexishop/common/styles/shadows.dart';
 import 'package:flexishop/common/widgets/images/rounded_image.dart';
 import 'package:flexishop/common/widgets/texts/product_title_text.dart';
+import 'package:flexishop/features/shop/screens/product_details/product_details_screen.dart';
 import 'package:flexishop/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
@@ -22,7 +23,7 @@ class YProductCardVertical extends StatelessWidget {
 
     /// -- Container with side padding, color, edges, radius & shadow
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Navigator.pushNamed(context, ProductDetailsScreen.routeName),
       child: Container(
         width: 180.0,
         padding: const EdgeInsets.all(1.0),
@@ -42,9 +43,11 @@ class YProductCardVertical extends StatelessWidget {
                 child: Stack(
                   children: [
                     /// Thumbnail Image
-                    const YRoundedImage(
-                      imageUrl: YImages.lightAppLogo,
-                      applyImageRadius: true,
+                    const Center(
+                      child: YRoundedImage(
+                        imageUrl: YImages.product4,
+                        applyImageRadius: true,
+                      ),
                     ),
 
                     /// Discount Tag

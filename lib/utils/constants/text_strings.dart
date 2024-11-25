@@ -1,6 +1,9 @@
 class YTexts{
   YTexts._();
 
+  // -- Dollar Sign
+  static const String dollarSign = "\$";
+
   // -- G L O B A L   T E X T
   static const String and = "and";
   static const String tContinue = "Continue";

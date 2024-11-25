@@ -10,8 +10,6 @@ class YRoundedImage extends StatelessWidget {
     this.onTap,
     this.containerHeight,
     this.containerWidth,
-    this.imageHeight = double.infinity,
-    this.imageWidth = double.infinity,
     this.borderRadius = YSizes.md,
     required this.imageUrl,
     this.fit = BoxFit.contain,
@@ -22,7 +20,6 @@ class YRoundedImage extends StatelessWidget {
   });
 
   final double? containerHeight, containerWidth;
-  final double? imageHeight, imageWidth;
   final double borderRadius;
   final String imageUrl;
   final bool applyImageRadius;
@@ -52,8 +49,6 @@ class YRoundedImage extends StatelessWidget {
               : BorderRadius.zero,
           child: Image(
             fit: fit,
-            width: imageHeight,
-            height: imageWidth,
             image:
             isNetworkImage ? NetworkImage(imageUrl) : AssetImage(imageUrl),
           ),

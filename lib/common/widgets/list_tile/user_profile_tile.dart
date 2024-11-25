@@ -16,7 +16,7 @@ class YUserProfileTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: const YCircularImage(
-        imageUrl: YImages.productImage1,
+        imageUrl: YImages.lightAppLogo,
       ),
       title: Text('Golam Shakib Hosen',
           style: Theme.of(context)

@@ -24,24 +24,24 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            /// -- H E A D E R
+            /// -- Header
             const YPrimaryHeaderContainer(
               child: Column(
                 children: [
-                  /// Appbar
+                  /// -- Appbar
                   YHomeAppBar(),
                   SizedBox(height: YSizes.spaceBtwSections),
 
-                  /// Searchbar
+                  /// -- Searchbar
                   YCustomSearchBar(text: YTexts.searchInStore),
                   SizedBox(height: YSizes.spaceBtwSections),
 
-                  /// Categories
+                  /// -- Categories
                   Padding(
                     padding: EdgeInsets.only(left: YSizes.defaultSpace),
                     child: Column(
                       children: [
-                        /// Heading Text
+                        /// -- Heading Text
                         YSectionHeading(
                           title: YTexts.popularCat,
                           textColor: YColors.white,
@@ -49,7 +49,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         SizedBox(height: YSizes.spaceBtwItems),
 
-                        /// Heading Categories
+                        /// -- Heading Categories
                         YHomeCategories(),
                       ],
                     ),
@@ -59,16 +59,16 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
 
-            /// Body
+            /// -- Body
             Padding(
               padding: const EdgeInsets.all(YSizes.defaultSpace),
               child: Column(
                 children: [
                   /// -- Promo slider banner
                   const YPromoSlider(banners: [
-                    YImages.banner1,
-                    YImages.banner2,
-                    YImages.banner3
+                    YImages.banner4,
+                    YImages.banner3,
+                    YImages.banner5,
                   ]),
                   const SizedBox(height: YSizes.spaceBtwItems),
 
@@ -77,7 +77,9 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(height: YSizes.spaceBtwItems),
 
                   /// -- Popular Products
-                  YGridLayout(itemCount: 4, itemBuilder: (_ , index ) => const YProductCardVertical()),
+                  YGridLayout(
+                      itemCount: 4,
+                      itemBuilder: (_, index) => const YProductCardVertical()),
                 ],
               ),
             ),

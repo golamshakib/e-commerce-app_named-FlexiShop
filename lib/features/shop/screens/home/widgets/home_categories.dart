@@ -18,7 +18,7 @@ class YHomeCategories extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: 7,
         itemBuilder: (_, index) => YVerticalImageText(
-          image: YImages.shoeIcon1,
+          image: YImages.shoeIcon8,
           title: YTexts.categoryText,
           onTap: () {},
         ),

@@ -47,7 +47,7 @@ class YVerticalImageText extends StatelessWidget {
 
             /// Text
             SizedBox(
-                width: 50.0,
+                width: 55.0,
                 child: Text(
                   title,
                   style: Theme.of(context)

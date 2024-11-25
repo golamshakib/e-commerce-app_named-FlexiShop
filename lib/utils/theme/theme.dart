@@ -20,7 +20,7 @@ class YAppTheme {
     fontFamily: 'Poppins',
     brightness: Brightness.light,
     primaryColor: Colors.blue,
-    scaffoldBackgroundColor: YColors.light,
+    scaffoldBackgroundColor: YColors.white,
     textTheme: YTextTheme.lightTextTheme,
     chipTheme: YChipTheme.lightChipTheme,
     appBarTheme: YAppBarTheme.lightAppBarTheme,

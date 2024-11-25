@@ -23,16 +23,16 @@ class YCategoryTab extends StatelessWidget {
               /// -- Brands
               const YBrandShowcase(
                 images: [
-                  YImages.productImage1,
-                  YImages.shoeIcon1,
-                  YImages.banner1,
+                  YImages.product2,
+                  YImages.product6,
+                  YImages.product5,
                 ],
               ),
               const YBrandShowcase(
                 images: [
-                  YImages.productImage1,
-                  YImages.shoeIcon1,
-                  YImages.banner1,
+                  YImages.product2,
+                  YImages.product6,
+                  YImages.product5,
                 ],
               ),
               const SizedBox(height: YSizes.spaceBtwItems),

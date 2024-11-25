@@ -26,7 +26,7 @@ class ProfileScreen extends StatelessWidget {
             child: Column(
               children: [
                 /// --- Profile Picture & Picture Change Button
-                const YCircularImage(imageUrl: YImages.productImage1),
+                const YCircularImage(imageUrl: YImages.lightAppLogo),
                 TextButton(
                     onPressed: () {},
                     child: const Text('Change Profile Picture')),
