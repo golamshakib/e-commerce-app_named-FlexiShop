@@ -11,7 +11,7 @@ class YColors {
   // -- T E X T   C O L O R S
   static const Color textPrimary = Color(0xFF333333);
   static const Color textSecondary = Color(0xFF6C757D);
-  static const Color textWhite = Colors.white;
+  static const Color textWhite = Color(0xFFFFFFFF);
 
   // -- B A C K G R O U N D   C O L O R S
   static const Color light = Color(0xFFF6F6f6);
@@ -30,6 +30,9 @@ class YColors {
   // -- B O R D E R   C O L O R S
   static const Color borderPrimary = Color(0xFFD9D9D9);
   static const Color borderSecondary = Color(0xFFE6E6E6);
+
+  // -- D I V I D E R   C O L O R S
+  static const Color dividerPrimary = Color(0xFF333333);
 
   // -- E R R O R   A N D   V A L I D A T I O N   C O L O R S
   static const Color error = Color(0xFFD32F2F);

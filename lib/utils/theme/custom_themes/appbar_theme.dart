@@ -1,3 +1,4 @@
+import 'package:flexishop/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class YAppBarTheme {
@@ -10,9 +11,9 @@ class YAppBarTheme {
     scrolledUnderElevation: 0,
     backgroundColor: Colors.transparent,
     surfaceTintColor: Colors.transparent,
-    iconTheme: IconThemeData(color: Colors.black, size: 24.0),
-    actionsIconTheme: IconThemeData(color: Colors.black, size: 24.0),
-    titleTextStyle: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600, color: Colors.black),
+    iconTheme: IconThemeData(color: YColors.black, size: 24.0),
+    actionsIconTheme: IconThemeData(color: YColors.black, size: 24.0),
+    titleTextStyle: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600, color: YColors.dark),
   );
 
   // D A R K   A P P   B A R   T H E M E
@@ -22,8 +23,8 @@ class YAppBarTheme {
     scrolledUnderElevation: 0,
     backgroundColor: Colors.transparent,
     surfaceTintColor: Colors.transparent,
-    iconTheme: IconThemeData(color: Colors.white, size: 24.0),
-    actionsIconTheme: IconThemeData(color: Colors.white, size: 24.0),
-    titleTextStyle: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600, color: Colors.white),
+    iconTheme: IconThemeData(color: YColors.white, size: 24.0),
+    actionsIconTheme: IconThemeData(color: YColors.white, size: 24.0),
+    titleTextStyle: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600, color: YColors.white),
   );
 }
