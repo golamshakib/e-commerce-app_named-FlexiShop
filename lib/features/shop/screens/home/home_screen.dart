@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 
 import '../../../../common/widgets/custom_shape/container/primary_header_container.dart';
 import '../../../../common/widgets/custom_shape/container/search_container.dart';
+import '../../../../common/widgets/layouts/grid_layout.dart';
+import '../../../../common/widgets/products/product_cards/product_card_vertical.dart';
 import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/image_strings.dart';
@@ -18,12 +20,12 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
             /// -- Header
-            YPrimaryHeaderContainer(
+            const YPrimaryHeaderContainer(
               child: Column(
                 children: [
                   /// -- Appbar
@@ -39,7 +41,7 @@ class HomeScreen extends StatelessWidget {
                     padding: EdgeInsets.only(left: YSizes.defaultSpace),
                     child: Column(
                       children: [
-                        /// Heading Text
+                        /// -- Heading Text
                         YSectionHeading(
                           title: YTexts.popularCat,
                           textColor: YColors.white,
@@ -47,19 +49,39 @@ class HomeScreen extends StatelessWidget {
                         ),
                         SizedBox(height: YSizes.spaceBtwItems),
 
-                        /// Heading Categories
+                        /// -- Heading Categories
                         YHomeCategories(),
                       ],
                     ),
                   ),
+                  SizedBox(height: YSizes.spaceBtwSections),
                 ],
               ),
             ),
 
-            /// -- Promo Banner
+            /// -- Body
             Padding(
-              padding: EdgeInsets.all(YSizes.defaultSpace),
-              child: YPromoSlider(banners: [YImages.banner1, YImages.banner2, YImages.banner3]),
+              padding: const EdgeInsets.all(YSizes.defaultSpace),
+              child: Column(
+                children: [
+                  /// -- Promo slider banner
+                  const YPromoSlider(banners: [
+                    YImages.banner4,
+                    YImages.banner3,
+                    YImages.banner5,
+                  ]),
+                  const SizedBox(height: YSizes.spaceBtwItems),
+
+                  /// Heading
+                  YSectionHeading(title: 'Popular Products', onPressed: () {}),
+                  const SizedBox(height: YSizes.spaceBtwItems),
+
+                  /// -- Popular Products
+                  YGridLayout(
+                      itemCount: 8,
+                      itemBuilder: (_, index) => const YProductCardVertical()),
+                ],
+              ),
             ),
           ],
         ),

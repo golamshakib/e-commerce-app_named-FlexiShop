@@ -13,11 +13,13 @@ class YCustomSearchBar extends StatelessWidget {
     this.showBackground = true,
     this.showBorder = true,
     this.onTap,
+    this.padding = const EdgeInsets.symmetric(horizontal: YSizes.defaultSpace),
   });
 
   final String text;
   final IconData? icon;
   final bool showBackground, showBorder;
+  final EdgeInsetsGeometry padding;
   final VoidCallback? onTap;
 
   @override
@@ -26,9 +28,9 @@ class YCustomSearchBar extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: YSizes.defaultSpace),
+        padding: padding,
         child: Container(
-          padding: EdgeInsets.all(YSizes.md),
+          padding: const EdgeInsets.all(YSizes.md),
           decoration: BoxDecoration(
               color: showBackground
                   ? dark
@@ -37,12 +39,12 @@ class YCustomSearchBar extends StatelessWidget {
                   : Colors.transparent,
               borderRadius: BorderRadius.circular(YSizes.borderRadiusLg),
               border: showBorder
-                  ? Border.all(color: dark ? YColors.dark : YColors.light)
+                  ? Border.all(color: YColors.darkGrey)
                   : null),
           child: Row(
             children: [
-              Icon(icon, color: YColors.darkGrey),
-              SizedBox(width: YSizes.spaceBtwItems),
+              Icon(icon, color: dark ? YColors.darkerGrey : Colors.grey),
+              const SizedBox(width: YSizes.spaceBtwItems),
               Text(
                 text,
                 style: Theme.of(context).textTheme.bodySmall,

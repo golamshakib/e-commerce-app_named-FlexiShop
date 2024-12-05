@@ -16,7 +16,7 @@ class SignupForm extends StatelessWidget {
     final dark = YDeviceUtils.isDarkMode(context);
     return Form(
       child: Padding(
-        padding: EdgeInsets.symmetric(vertical: YSizes.spaceBtwSections),
+        padding: const EdgeInsets.symmetric(vertical: YSizes.spaceBtwSections),
         child: Column(
           children: [
             /// First name & Last name
@@ -31,7 +31,7 @@ class SignupForm extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(width: YSizes.spaceBtwInputFields),
+                const SizedBox(width: YSizes.spaceBtwInputFields),
                 Expanded(
                   child: TextFormField(
                     expands: false,
@@ -43,7 +43,7 @@ class SignupForm extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: YSizes.spaceBtwInputFields),
+            const SizedBox(height: YSizes.spaceBtwInputFields),
 
             /// Username
             TextFormField(
@@ -52,7 +52,7 @@ class SignupForm extends StatelessWidget {
                 labelText: YTexts.username,
               ),
             ),
-            SizedBox(height: YSizes.spaceBtwInputFields),
+            const SizedBox(height: YSizes.spaceBtwInputFields),
 
             /// Email
             TextFormField(
@@ -61,7 +61,7 @@ class SignupForm extends StatelessWidget {
                 labelText: YTexts.email,
               ),
             ),
-            SizedBox(height: YSizes.spaceBtwInputFields),
+            const SizedBox(height: YSizes.spaceBtwInputFields),
 
             /// Phone number
             TextFormField(
@@ -70,7 +70,7 @@ class SignupForm extends StatelessWidget {
                 labelText: YTexts.phoneNo,
               ),
             ),
-            SizedBox(height: YSizes.spaceBtwInputFields),
+            const SizedBox(height: YSizes.spaceBtwInputFields),
 
             /// Password
             TextFormField(
@@ -81,7 +81,7 @@ class SignupForm extends StatelessWidget {
                 labelText: YTexts.password,
               ),
             ),
-            SizedBox(height: YSizes.spaceBtwSections),
+            const SizedBox(height: YSizes.spaceBtwSections),
 
             /// Terms & Condition Checkbox
             Row(
@@ -94,7 +94,7 @@ class SignupForm extends StatelessWidget {
                     onChanged: (value) {},
                   ),
                 ),
-                SizedBox(width: YSizes.spaceBtwItems),
+                const SizedBox(width: YSizes.spaceBtwItems),
                 Text.rich(
                   TextSpan(
                     children: [
@@ -127,7 +127,7 @@ class SignupForm extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: YSizes.spaceBtwSections),
+            const SizedBox(height: YSizes.spaceBtwSections),
 
             /// Create account Button
             SizedBox(

@@ -28,7 +28,7 @@ class YColors {
   static const Color buttonDisabled = Color(0xFFC4C4C4);
 
   // -- B O R D E R   C O L O R S
-  static const Color borderPrimary = Color(0xFF656464);
+  static const Color borderPrimary = Color(0xFFD9D9D9);
   static const Color borderSecondary = Color(0xFFE6E6E6);
 
   // -- D I V I D E R   C O L O R S

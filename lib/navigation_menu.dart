@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:provider/provider.dart';
 
+import 'features/personalization/screens/settings/settings_screen.dart';
 import 'features/shop/screens/home/home_screen.dart';
-import 'features/shop/screens/profile/profile_screen.dart';
 import 'features/shop/screens/store/store_screen.dart';
 import 'features/shop/screens/wishlist/wishlist_screen.dart';
 import 'utils/constants/colors.dart';
@@ -56,7 +56,7 @@ class NavigationMenuProvider with ChangeNotifier {
     const HomeScreen(),
     const StoreScreen(),
     const WishlistScreen(),
-    const ProfileScreen(),
+    const SettingsScreen(),
   ];
 
   void updateSelectedIndex(int index) {

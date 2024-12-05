@@ -15,18 +15,18 @@ class ForgetPasswordScreen extends StatelessWidget {
       appBar: AppBar(),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(YSizes.defaultSpace),
+          padding: const EdgeInsets.all(YSizes.defaultSpace),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               /// Headings
               Text(YTexts.forgetPassword,
                   style: Theme.of(context).textTheme.headlineMedium),
-              SizedBox(height: YSizes.spaceBtwItems),
+              const SizedBox(height: YSizes.spaceBtwItems),
               Text(YTexts.forgetPasswordSubTitle,
                   style: Theme.of(context).textTheme.labelMedium),
 
-              SizedBox(height: YSizes.spaceBtwSections * 2),
+              const SizedBox(height: YSizes.spaceBtwSections * 2),
 
               /// Text field
               TextFormField(
@@ -35,7 +35,7 @@ class ForgetPasswordScreen extends StatelessWidget {
                   labelText: YTexts.email,
                 ),
               ),
-              SizedBox(height: YSizes.spaceBtwSections),
+              const SizedBox(height: YSizes.spaceBtwSections),
 
               /// Submit Button
               SizedBox(

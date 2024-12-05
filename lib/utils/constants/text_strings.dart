@@ -1,6 +1,9 @@
 class YTexts{
   YTexts._();
 
+  // -- Dollar Sign
+  static const String dollarSign = "\$";
+
   // -- G L O B A L   T E X T
   static const String and = "and";
   static const String tContinue = "Continue";
@@ -60,7 +63,7 @@ class YTexts{
 
   // -- H O M E   T E X T
   static const String appBarTile = "Good day for shopping";
-  static const String appbarSubTitle = "Taimoor Sikandar";
+  static const String appbarSubTitle = "Golam Shakib Hosen";
 
   // -- S E A R C H   T E X T
   static const String searchInStore = "Search in Store";
@@ -70,4 +73,8 @@ class YTexts{
 
   // -- C A T E G O R Y   I M A G E   T E X T
   static const String categoryText = "Shoe Category";
+
+  // -- P R O D U C T   T E X T
+
+
 }

@@ -1,3 +1,4 @@
+import 'package:flexishop/utils/constants/colors.dart';
 import 'package:flexishop/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
@@ -8,10 +9,10 @@ class YCustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   const YCustomAppbar({
     super.key,
     this.title,
-    this.showBackArrow = false,
     this.leadingIcon,
     this.actions,
     this.leadingOnPressed,
+    this.showBackArrow = false,
   });
 
   final Widget? title;
@@ -22,14 +23,15 @@ class YCustomAppbar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark = YDeviceUtils.isDarkMode(context);
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: YSizes.md),
+      padding: const EdgeInsets.symmetric(horizontal: YSizes.md),
       child: AppBar(
         automaticallyImplyLeading: false,
         leading: showBackArrow
             ? IconButton(
                 onPressed: () => Navigator.pop(context),
-                icon: const Icon(Iconsax.arrow_left))
+                icon: Icon(Iconsax.arrow_left, color: dark? YColors.white : YColors.dark))
             : leadingIcon != null
                 ? IconButton(
                     onPressed: leadingOnPressed, icon: Icon(leadingIcon))

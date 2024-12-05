@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../features/authentication/screens/signup/success_email_screen.dart';
 import '../../../utils/constants/sizes.dart';
 import '../../../utils/device/device_utility.dart';
 
@@ -28,7 +27,7 @@ class VerifyEmailOrResetEmailScreenItem extends StatelessWidget {
           width: YDeviceUtils.screenWidth(context) * 0.6,
           image: AssetImage(image),
         ),
-        SizedBox(height: YSizes.spaceBtwSections),
+        const SizedBox(height: YSizes.spaceBtwSections),
 
         /// Title & subtitle
         Text(
@@ -36,19 +35,19 @@ class VerifyEmailOrResetEmailScreenItem extends StatelessWidget {
           style: Theme.of(context).textTheme.headlineMedium,
           textAlign: TextAlign.center,
         ),
-        SizedBox(height: YSizes.spaceBtwItems),
+        const SizedBox(height: YSizes.spaceBtwItems),
         Text(
           'golamshakib@gmail.com',
           style: Theme.of(context).textTheme.labelLarge,
           textAlign: TextAlign.center,
         ),
-        SizedBox(height: YSizes.spaceBtwItems),
+        const SizedBox(height: YSizes.spaceBtwItems),
         Text(
           subTitle,
           style: Theme.of(context).textTheme.labelMedium,
           textAlign: TextAlign.center,
         ),
-        SizedBox(height: YSizes.spaceBtwSections),
+        const SizedBox(height: YSizes.spaceBtwSections),
 
         /// Continue
         SizedBox(
@@ -58,7 +57,7 @@ class VerifyEmailOrResetEmailScreenItem extends StatelessWidget {
             child: Text(elevatedButtonText),
           ),
         ),
-        SizedBox(height: YSizes.spaceBtwItems),
+        const SizedBox(height: YSizes.spaceBtwItems),
 
         /// Resend email
         SizedBox(

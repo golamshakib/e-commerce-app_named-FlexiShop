@@ -19,24 +19,24 @@ class SocialButtons extends StatelessWidget {
               borderRadius: BorderRadius.circular(100.0)),
           child: IconButton(
             onPressed: () {},
-            icon: Image(
+            icon: const Image(
               height: YSizes.iconMd,
               width: YSizes.iconMd,
-              image: const AssetImage(YImages.google),
+              image: AssetImage(YImages.google),
             ),
           ),
         ),
-        SizedBox(width: YSizes.spaceBtwItems),
+        const SizedBox(width: YSizes.spaceBtwItems),
         Container(
           decoration: BoxDecoration(
               border: Border.all(color: YColors.grey),
               borderRadius: BorderRadius.circular(100.0)),
           child: IconButton(
             onPressed: () {},
-            icon: Image(
+            icon: const Image(
               height: YSizes.iconMd,
               width: YSizes.iconMd,
-              image: const AssetImage(YImages.facebook),
+              image: AssetImage(YImages.facebook),
             ),
           ),
         ),

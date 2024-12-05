@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../common/widgets/appbar/custom_appbar.dart';
-import '../../../../../common/widgets/product_carts/product_cart_icon.dart';
+import '../../../../../common/widgets/products/product_cards/product_cart_counter_icon.dart';
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/text_strings.dart';
 
@@ -22,6 +22,8 @@ class YHomeAppBar extends StatelessWidget {
                   .labelLarge!
                   .apply(color: YColors.grey)),
           Text(YTexts.appbarSubTitle,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
               style: Theme.of(context)
                   .textTheme
                   .headlineMedium!

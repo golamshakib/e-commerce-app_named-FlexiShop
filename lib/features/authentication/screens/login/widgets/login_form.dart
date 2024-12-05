@@ -16,7 +16,7 @@ class LoginForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Form(
       child: Padding(
-        padding: EdgeInsets.symmetric(vertical: YSizes.spaceBtwSections),
+        padding: const EdgeInsets.symmetric(vertical: YSizes.spaceBtwSections),
         child: Column(
           children: [
             /// Email
@@ -26,7 +26,7 @@ class LoginForm extends StatelessWidget {
                 labelText: YTexts.email,
               ),
             ),
-            SizedBox(height: YSizes.spaceBtwInputFields),
+            const SizedBox(height: YSizes.spaceBtwInputFields),
 
             /// Password
             TextFormField(
@@ -37,7 +37,7 @@ class LoginForm extends StatelessWidget {
                 labelText: YTexts.password,
               ),
             ),
-            SizedBox(height: YSizes.spaceBtwInputFields / 2),
+            const SizedBox(height: YSizes.spaceBtwInputFields / 2),
 
             /// Remember me & Forget Password
             Row(
@@ -50,7 +50,7 @@ class LoginForm extends StatelessWidget {
                       value: true,
                       onChanged: (value) {},
                     ),
-                    SizedBox(width: YSizes.sm),
+                    const SizedBox(width: YSizes.sm),
                     const Text(YTexts.rememberMe),
                   ],
                 ),
@@ -62,7 +62,7 @@ class LoginForm extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: YSizes.spaceBtwSections),
+            const SizedBox(height: YSizes.spaceBtwSections),
 
             /// Sign In Button
             SizedBox(
@@ -72,7 +72,7 @@ class LoginForm extends StatelessWidget {
                 child: const Text(YTexts.signIn),
               ),
             ),
-            SizedBox(height: YSizes.spaceBtwItems),
+            const SizedBox(height: YSizes.spaceBtwItems),
 
             /// Create Account Button
             SizedBox(

@@ -10,6 +10,12 @@ import 'features/authentication/screens/login/login_screen.dart';
 import 'features/authentication/screens/onboarding/onboarding_screen.dart';
 import 'features/authentication/screens/signup/signup_screen.dart';
 import 'features/authentication/screens/signup/verify_email_screen.dart';
+import 'features/personalization/screens/profile/profile_screen.dart';
+import 'features/personalization/screens/settings/settings_screen.dart';
+import 'features/shop/screens/home/home_screen.dart';
+import 'features/shop/screens/product_details/product_details_screen.dart';
+import 'features/shop/screens/store/store_screen.dart';
+import 'features/shop/screens/wishlist/wishlist_screen.dart';
 import 'navigation_menu.dart';
 import 'utils/theme/theme.dart';
 
@@ -43,6 +49,12 @@ class MyApp extends StatelessWidget {
         ForgetPasswordScreen.routeName: (context) => const ForgetPasswordScreen(),
         PasswordResetScreen.routeName: (context) => const PasswordResetScreen(),
         NavigationMenu.routeName: (context) => const NavigationMenu(),
+        HomeScreen.routeName: (context) => const HomeScreen(),
+        StoreScreen.routeName: (context) => const StoreScreen(),
+        WishlistScreen.routeName: (context) => const WishlistScreen(),
+        SettingsScreen.routeName: (context) => const SettingsScreen(),
+        ProfileScreen.routeName: (context) => const ProfileScreen(),
+        ProductDetailsScreen.routeName: (context) => const ProductDetailsScreen(),
       },
     );
   }
