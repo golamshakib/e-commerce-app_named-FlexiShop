@@ -78,7 +78,7 @@ class HomeScreen extends StatelessWidget {
 
                   /// -- Popular Products
                   YGridLayout(
-                      itemCount: 4,
+                      itemCount: 8,
                       itemBuilder: (_, index) => const YProductCardVertical()),
                 ],
               ),

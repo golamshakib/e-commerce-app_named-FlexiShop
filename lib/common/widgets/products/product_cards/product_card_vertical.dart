@@ -45,7 +45,7 @@ class YProductCardVertical extends StatelessWidget {
                     /// Thumbnail Image
                     const Center(
                       child: YRoundedImage(
-                        imageUrl: YImages.product4,
+                        imageUrl: YImages.product6,
                         applyImageRadius: true,
                       ),
                     ),
@@ -89,7 +89,7 @@ class YProductCardVertical extends StatelessWidget {
                 children: [
                   /// Product Title
                   YProductTitleText(
-                    title: 'Green Air Nike shoes',
+                    title: 'Nike Air shoes',
                     smallSize: true,
                   ),
                   SizedBox(height: YSizes.spaceBtwItems / 2),

@@ -1,6 +1,5 @@
 import 'package:flexishop/common/widgets/custom_shape/container/rounded_container.dart';
 import 'package:flexishop/common/widgets/images/circular_image.dart';
-import 'package:flexishop/common/widgets/images/rounded_image.dart';
 import 'package:flexishop/common/widgets/texts/brand_text_with_verification_icon.dart';
 import 'package:flexishop/common/widgets/texts/product_price_text.dart';
 import 'package:flexishop/common/widgets/texts/product_title_text.dart';
@@ -9,7 +8,6 @@ import 'package:flexishop/utils/constants/enums.dart';
 import 'package:flexishop/utils/constants/image_strings.dart';
 import 'package:flexishop/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/device/device_utility.dart';
@@ -45,11 +43,7 @@ class YProductData extends StatelessWidget {
             const SizedBox(width: YSizes.spaceBtwItems),
 
             /// - Price
-            Text('${YTexts.dollarSign}250',
-                  style: Theme.of(context)
-                      .textTheme
-                      .titleSmall!
-                      .apply(decoration: TextDecoration.lineThrough)),
+            const YProductPriceText(price: '250', lineThrough: true),
             const SizedBox(width: YSizes.spaceBtwItems),
             const YProductPriceText(price: '175', isLarge: true),
           ],
@@ -76,7 +70,8 @@ class YProductData extends StatelessWidget {
                 containerHeight: 32.0,
                 containerWidth: 32.0,
                 overlayColor: dark? YColors.white : YColors.black,
-                imageUrl: YImages.shoeIcon8),
+                imageUrl: YImages.nikeLogo),
+            const SizedBox(width: YSizes.spaceBtwItems / 2),
             const YBrandTitleTextWithVerificationIcon(title: 'Nike', brandTextSize: TextSizes.medium),
           ],
         )

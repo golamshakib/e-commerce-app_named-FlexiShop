@@ -1,6 +1,9 @@
+import 'package:flexishop/common/widgets/appbar/custom_appbar.dart';
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
 import '../../../../../common/widgets/custom_shape/curved_edges/curved_edges_widget.dart';
+import '../../../../../common/widgets/icons/circular_icon.dart';
 import '../../../../../common/widgets/images/rounded_image.dart';
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/image_strings.dart';
@@ -25,9 +28,10 @@ class YProductImageSlider extends StatelessWidget {
             const SizedBox(
                 height: 400.0,
                 child: Center(
-                    child: Image(
-                        fit: BoxFit.contain,
-                        image: AssetImage(YImages.product4)))),
+                  child: Image(
+                      fit: BoxFit.contain,
+                      image: AssetImage(YImages.product6)),
+                )),
 
             /// -- Image Slider
             Positioned(
@@ -52,6 +56,16 @@ class YProductImageSlider extends StatelessWidget {
                 ),
               ),
             ),
+            YCustomAppbar(
+              showBackArrow: true,
+
+              actions: [
+                YCircularIcon(
+                    icon: Iconsax.heart5,
+                    color: Colors.red,
+                    onPressed: () {}),
+              ],
+            )
           ],
         ),
       ),
