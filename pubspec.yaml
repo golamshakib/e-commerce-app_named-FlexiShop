@@ -47,7 +47,7 @@ dependencies:
   intl:
   logger:
   url_launcher:
-  shared_preferences:
+  shared_preferences: ^2.3.4
 
   # SPLASH SCREEN
   flutter_native_splash: ^2.4.2
